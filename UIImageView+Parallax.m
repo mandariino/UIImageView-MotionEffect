@@ -1,9 +1,9 @@
 //
 //  UIImageView+Parallax.m
-//  Central
+//  Oscar Dominguez
 //
 //  Created by Oscar Domínguez on 31/03/14.
-//  Copyright (c) 2014 Central. All rights reserved.
+//  Copyright (c) 2014 Oscar Dominguez. All rights reserved.
 //
 
 #import "UIImageView+Parallax.h"
@@ -28,6 +28,7 @@
     UIMotionEffectGroup *group = [UIMotionEffectGroup new];
     group.motionEffects = @[horizontalMotionEffect, verticalMotionEffect];
     [self addMotionEffect:group];
+    [self removeMotionEffect:[self.motionEffects objectAtIndex:0]];
 
 }
 @end

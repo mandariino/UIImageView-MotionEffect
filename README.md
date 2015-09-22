@@ -4,7 +4,7 @@ UIImageView-Parallax-
 Simple Parallax Effect for UIImageView
 
 
-/// Only iOS 7///
+iOS 7 and beyond.
 
 
 
@@ -13,11 +13,10 @@ Only add in your header this line:
   #import "UIImageView+Parallax.h"
 
 
-and in your - (void)viewDidLoad
+Implement in your viewDidLoad method this message.
 
 
   [yourImage addParallax];
-
 
 
 Hope to enjoy it.
