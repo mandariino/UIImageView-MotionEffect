@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Oscar Dominguez. All rights reserved.
 //
 
-#import "UIImageView+Parallax.h"
+#import "UIImageView+MotionEffect.h"
 
 @implementation UIImageView (Parallax)
--(void)addParallax{
+-(void)addMotionEffect{
     
     UIInterpolatingMotionEffect *verticalMotionEffect =
     [[UIInterpolatingMotionEffect alloc]
@@ -27,8 +27,11 @@
     
     UIMotionEffectGroup *group = [UIMotionEffectGroup new];
     group.motionEffects = @[horizontalMotionEffect, verticalMotionEffect];
+    
     [self addMotionEffect:group];
-    [self removeMotionEffect:[self.motionEffects objectAtIndex:0]];
+}
 
+-(void)removeMotionEffect{
+    [self removeMotionEffect:[self.motionEffects objectAtIndex:0]];
 }
 @end

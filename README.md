@@ -1,22 +1,21 @@
-UIImageView-Parallax-
+UIImageView-MotionEffect
 =====================
+Simple and clean Motion Effect for *UIImageView* container
 
-Simple Parallax Effect for UIImageView
-
-
-iOS 7 and beyond.
+**For iOS 7 and beyond.**
 
 
+You only need to import this class to your controller with this command:
 
-Only add in your header this line:
+#import "UIImageView+MotionEffect.h"
 
-  #import "UIImageView+Parallax.h"
+Implement in your *viewDidLoad* method this message:
+
+    [yourImage addMotionEffect];
+
+To remove the Parallax effect, you should invoke this method.
+
+    [yourImage removeMotionEffect];
 
 
-Implement in your viewDidLoad method this message.
 
-
-  [yourImage addParallax];
-
-
-Hope to enjoy it.

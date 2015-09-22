@@ -1,5 +1,5 @@
 //
-//  UIImageView+Parallax.h
+//  UIImageView+MotionEffect.h
 //  Oscar Dominguez
 //
 //  Created by Oscar Dominguez on 31/03/14.
@@ -10,7 +10,7 @@
 
 @interface UIImageView (Parallax)
 
--(void) addParallax;
-
+-(void) addMotionEffect;
+-(void) removeMotionEffect;
 
 @end
